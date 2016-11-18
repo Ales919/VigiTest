@@ -31,9 +31,10 @@ cv2.circle(I_reddot,center_of_image,radius,color,-1)
 
 seconds = 4
 cv2.imshow("Window", I_black)
-cv2.waitKey(seconds*1000) & 0xff
+cv2.waitKey(0) & 0xff
+
+#http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_gui/py_mouse_handling/py_mouse_handling.html
 cv2.imshow("Window", I_reddot)
 cv2.waitKey(0) & 0xff
 cv2.destroyWindow("Window")
 cv2.waitKey(1) & 0xff
-
